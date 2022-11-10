@@ -1,0 +1,18 @@
+package tema_4;
+
+import java.util.Scanner;
+
+public class ejercicio_17 {
+	public static void main(String[] args) {
+		try (Scanner teclado = new Scanner(System.in)) {
+			String frase = "",frasefinal="";
+			char pr,sg;
+			System.out.println("Di una palabra");
+			frase = teclado.nextLine();
+			pr=frase.charAt(0);
+			sg=frase.charAt(frase.length()-1);
+			
+		}
+
+	}
+}

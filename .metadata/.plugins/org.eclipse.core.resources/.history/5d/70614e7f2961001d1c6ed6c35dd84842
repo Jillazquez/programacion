@@ -1,0 +1,44 @@
+package tema_4;
+
+import java.util.Scanner;
+
+public class ejercicio_16 {
+	public static void main(String[] args) {
+		try (Scanner teclado = new Scanner(System.in)) {
+			int espacio1, espacio2;
+			String nombre1 = "", nombre2 = "", nombre = "", apellido = "", nombre3 = null, apellido3 = null;
+			char c, d;
+			System.out.println("Di el primer nombre");
+			nombre1 = teclado.nextLine();
+			System.out.println("Di el segundo nombre");
+			nombre2 = teclado.nextLine();
+
+			espacio1 = nombre1.indexOf(" ");
+			espacio2 = nombre1.indexOf(" ");
+
+			for (int i = 0; i < espacio1; i++) {
+				c = nombre1.charAt(i);
+				nombre += c;
+			}
+			System.out.println(nombre);
+			for (int i = espacio1; i < nombre1.length(); i++) {
+				c = nombre.charAt(i);
+				apellido += c;
+			}
+			System.out.println(apellido);
+			for (int i = 0; i < espacio2; i++) {
+				c = nombre1.charAt(i);
+				nombre3 += c;
+			}
+			for (int i = espacio2 + 1; i < nombre2.length(); i++) {
+				c = nombre.charAt(i);
+				apellido3 += c;
+			}
+			
+			System.out.println(nombre+" "+apellido3);
+			System.out.println(nombre3+" "+apellido);
+
+		}
+
+	}
+}
