@@ -20,9 +20,9 @@ public class ejercicio_15 {
 					num++;
 			}
 			if (num == (frase.length() / 2))
-				System.out.println("Si es palindromo");
+				System.out.println("lo es");
 			else
-				System.out.println("No es palindromo");
+				System.out.println("No lo es");
 		}
 
 	}

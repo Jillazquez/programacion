@@ -5,9 +5,6 @@ import java.util.Scanner;
 public class ejercicio_19 {
 	public static void main(String[] args) {
 		try (Scanner teclado = new Scanner(System.in)) {
-			/*
-			 * Programa que calcula cual es la vocal que mas se repite y lo suelta por pantalla
-			 */
 			String frase = "";
 			char c = 0;
 			int a = 0, e = 0, i = 0, o = 0, u = 0, max = 0;

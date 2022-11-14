@@ -16,13 +16,13 @@ public class ejercicio_15 {
 			largo = frase.length();
 			for (int i = 0; i < largo / 2; i++) {
 				c = frase.charAt(i);
-				if (c == frase.charAt(largo - 1 - i))
+				if (c == frase.charAt(largo - 1 - i)) HOLAALOH
 					num++;
 			}
 			if (num == (frase.length() / 2))
-				System.out.println("Si es palindromo");
+				System.out.println("lo es");
 			else
-				System.out.println("No es palindromo");
+				System.out.println("No lo es");
 		}
 
 	}
