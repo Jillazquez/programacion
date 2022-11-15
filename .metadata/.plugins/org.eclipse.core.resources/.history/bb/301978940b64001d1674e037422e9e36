@@ -3,15 +3,10 @@ package tema_4;
 import java.util.Scanner;
 
 public class ejercicio_19 {
-	public static void main (String[] args){
-		try(Scanner teclado = new Scanner (System.in)) {
+	public static void main(String[] args) {
+		try (Scanner teclado = new Scanner(System.in)) {
 			/*
 			 * Programa que calcula cual es la vocal que mas se repite y lo suelta por pantalla
-			 */
-			
-			/*
-			 * public static void main(String[] args){
-			 * Scanner teclado= new Scanner (System.in){
 			 */
 			String frase = "";
 			char c = 0;
