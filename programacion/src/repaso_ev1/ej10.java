@@ -7,7 +7,7 @@ public class ej10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try (Scanner teclado = new Scanner(System.in)) {
-			int hora = 0, minuto = 0;
+			int hora = 0, minuto = 0,segundos=0;
 			boolean pasa = false;
 			System.out.println("Que hora es (horas)");
 			hora = teclado.nextInt();
@@ -23,7 +23,8 @@ public class ej10 {
 				if (hora < 24 && minuto < 60)
 					pasa = true;
 			}
-			System.out.println("Quedan para media noche "+(23-hora)+" horas "+(60-minuto)+" minutos");
+			segundos=(23-hora)*3600+(60-minuto)*60;
+			System.out.println("Quedan para media noche "+segundos+" Segundos");
 
 		}
 

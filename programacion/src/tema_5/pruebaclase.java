@@ -1,6 +1,6 @@
-package tema_4;
+package tema_5;
 
-public class ejercicio_13 {
+public class pruebaclase {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

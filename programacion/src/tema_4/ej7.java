@@ -1,4 +1,4 @@
-package programacion;
+package tema_4;
 
 import java.util.Scanner;
 
