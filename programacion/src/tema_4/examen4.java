@@ -1,5 +1,6 @@
 package tema_4;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class examen4 {
@@ -8,14 +9,20 @@ public class examen4 {
 		
 		Scanner teclado = new Scanner (System.in);
 		String iban="",numerocuenta="",codigo="";
-		boolean hecho = false;
-		while(!hecho) {
-		System.out.println("Dime tu IBAN");
-		iban= teclado.nextLine();
-		if(iban.length()==24)
-			hecho=true;
-		biginteger hola = 999999999999;
+		boolean valido = true;
+		do {
+			System.out.println("Introduce el iban");
+			iban=teclado.nextLine();
+			valido=iban.length()==24;
+			if(valido) {
+				valido = Character.isLetter(iban.charAt(0))&&Character.isLetter(iban.charAt(1));
+				int cont=2;
+				while(valido&&cont<24) {
+					valido=Character(iban.charAt(cont)).isDigit
+				}
+			}
 		} 	 		
 	}
 
 }
+	

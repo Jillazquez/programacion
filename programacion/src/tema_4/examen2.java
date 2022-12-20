@@ -37,11 +37,7 @@ public class examen2 {
 				break;
 			case 15:
 				numgirado+="F";
-				break;
-			case 16:
-				numgirado+="G";
-				break;
-				
+				break;				
 			}
 			}
 			if(numero<2) {
@@ -53,7 +49,7 @@ public class examen2 {
 		for(int i =ayuda-1;i>=0;i--) {
 			num+=numgirado.charAt(i);
 		}
-		System.out.println(num);
+		System.out.println(numero);
 	}
 
 }
