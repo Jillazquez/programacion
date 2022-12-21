@@ -1,7 +1,7 @@
 package tema_5;
 import java.util.Scanner;
 public class Ej8 {
-	private static int esFactorial(int numero) {
+	private static long esFactorial(int numero) {
 		int fact=1;
 		for (int i = 2 ; i <= numero;i++) {
 			fact=fact*i;
@@ -11,7 +11,8 @@ public class Ej8 {
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner (System.in);
 		// TODO Auto-generated method stub
-		int num1=0, num2=0,comb=0;
+		int num1=0, num2=0;
+		long comb=0;
 		do{
 		System.out.println("Introduce el primer numero");
 		num1 = teclado.nextInt();
